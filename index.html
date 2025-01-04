@@ -1,101 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <style>
-        body { margin: 0; padding: 0; }
-        html { height: 100%; cursor: default; }
-        body {
-            font-family: "Roboto", sans-serif; /* Default font */
-            width: 100%; height: 100%;
-            text-align: center;
-            display: table;
-            opacity: 1;
-            animation: fadein 3s forwards;
-        }
-        h2 {
-            font-weight: 300;
-            margin-bottom: 25px;
-        }
-        img {
-            width: 35%; /* Image width */
-            border: 0; /* For IE */
-            /* Aspect ratio of image, gives initial dimension to prevent text moving down once image is loaded */
-            /* When changing logo, change this also */
-            aspect-ratio: 50 / 50;
-        }
-        #main {
-            vertical-align: middle;
-            display: table-cell;
-        }
-        /* Progress bar */
-        #progress {
-            width: 45%; /* Bar width */
-            margin: 0 auto;
-            border-radius: 10px; /* Roundness */
-            background-color: #a8a8a8; /* Background colour */
-            padding: 7px 5px;
-            /* border: 5px solid #a8a8a8; Border */
-        }
-        #fill {
-            padding: 2px 0;
-            background-color: #00b98b; /* Fill colour */
-            width: 35%; /* Bar percentage, change text below also */
-            border-radius: 25px; /* Roundness */
-            animation: proanimate 2s;
-        }
-        #barpercent h3 {
-            color: white; /* Bar percentage text colour */
-            margin: 0; padding: 0;
-            opacity: 1;
-            animation: fadein 3s forwards;
-        }
+  <meta charset="UTF-8" />
+  <meta name="description" content="Three Sister's Candle Company - Shop hand-crafted candles." />
+  <meta name="keywords" content="Soy Candle, Handmade, Gifts, Candles" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Three Sister's Candle Company</title>
+ 
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+   
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+  <link 
+  rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+/>
 
-        /* Fades in animation */
-        @keyframes fadein  {
-            from { opacity: 0; }
-        }
-        /* Animates bar on page load */
-        @keyframes proanimate {
-            from { width: 0%; }
-        }
-
-        @media screen and (max-width:600px) {
-            img {
-                width: 60%;
-            }
-            h1 {
-                font-size: 1.3em;
-            }
-            h2 {
-                margin: 1.1em;
-                font-size: 1.1em;
-            }
-            #progress {
-                width: 80%; /* Bar width */
-            }
-        }
-    </style>
-    <title>Three Sisters Candle Company | Coming Soon!</title>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
      <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DQ5K34ETNN"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5MW0B4WHJW"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-DQ5K34ETNN');
+  gtag('config', 'G-5MW0B4WHJW');
 </script>
 </head>
 <body>
-    <div id="main">
-        <img src="logo.png" alt="Logo Image">
-        <h1>Three Sisters Candle Company</h1>
-        <h2>Our website is currently under construction. </h2>
-        <div id="progress"><div id="fill"><div id="barpercent"><h3>50%</h3></div></div></div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <!-- Brand/Logo -->
+      <a class="navbar-brand" href="#">
+        Three Sister's Candle Company
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Menu Items -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+         <!--  <li class="nav-item"><a class="nav-link" href="#about">About</a></li> -->
+          <li class="nav-item"><a class="nav-link" href="#store">Store</a></li>
+         <!--  <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>-->
+          <div class="ec-cart-widget"></div>
+<div>
+<script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?110832033&data_platform=code&data_date=2025-01-01" charset="utf-8"></script>
+<script type="text/javascript">Ecwid.init();</script>
+</div>
+        </ul>
+      </div>
     </div>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+  </nav>
+  <!-- End Navbar -->
+<!-- Hero Section -->
+<section class="py-5 text-center bg-light" id="home">
+  <div class="container">
+    <h1 class="display-4">Welcome to Three Sister's Candle Company</h1>
+    <p class="lead">
+      Handle Crafted Candles made by three sisters.
+    </p>
+   
+    <img src="images/logo.svg" class="img-fluid" width="350" alt="Thad's Ready Made Tins Logo" />
+  </div>
+</section>
+ 
+
+  
+  <!-- End About Section -->
+
+  <!-- Store Section -->
+  <section class="py-5 bg-light" id="store">
+    <div class="container">
+      <h2 class="mb-4">Store</h2>
+      <p>
+        Shop our collection of ready-made tins below.
+      </p>
+
+      <div id="my-store-110833764"></div>
+      <div>
+      <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?110833764&data_platform=code&data_date=2025-01-01" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-110833764");</script>
+      </div>
+    </div>
+  </section>
+  <!-- End Store Section -->
+ <!-- About Section 
+<section class="py-5" id="about">
+  <div class="container">
+    <h2 class="mb-4">About Us</h2>
+    <p>
+      At Thad’s Ready Made Tins, our journey started with a shared love 
+      for being prepared. We believe that having convenient, ready-to-use 
+      kits on hand can make all the difference in everyday life—whether 
+      you’re at home, traveling, or on the go.
+    </p>
+    <p>
+      By packaging these kits in compact, easy-to-store tins, we empower 
+      you to be ready for anything life may throw your way. Each tin is 
+      thoughtfully curated to blend practicality, style, and quality, 
+      ensuring you can stay organized without sacrificing aesthetics. 
+      From first-aid essentials to emergency tool sets, our mission is 
+      to provide a simple yet purposeful way to keep preparedness close 
+      at hand.
+    </p>
+  </div>
+</section>
+-->
+<!-- End About Section -->
+
+ <!-- Newsletter Signup Section 
+<section class="py-5" id="contact">
+  <div class="container">
+    <h2 class="mb-4">Stay Updated</h2>
+    <p>Sign up for our newsletter to receive the latest news, product updates, and special offers.</p>
+    <form action="https://formspree.io/f/xrbgyayb" method="POST">
+      <div class="input-section">
+        <input 
+          type="email" 
+          name="email" 
+          class="input-field" 
+          placeholder="Email Address"
+          required 
+        />
+        <label for="input-field" class="error-msg"></label>
+        <div class="error">
+          <div class="error-icon"></div>
+        </div>
+        <button class="btn" type="submit">
+          <div class="arrow-img"></div>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+-->
+<!-- Social Media Section -->
+<section class="social-media bg-light py-4">
+  <div class="container text-center">
+    <h5 class="mb-3">Follow Us</h5>
+    <div class="d-flex justify-content-center gap-3">
+      <!-- Facebook -->
+      <a 
+        href="https://www.facebook.com/threesisterscandlecompany" 
+        target="_blank" 
+        rel="noopener" 
+        class="text-decoration-none text-dark"
+      >
+        <i class="bi bi-facebook fs-4"></i>
+      </a>
+      <!-- Twitter 
+      <a 
+        href="https://twitter.com/yourprofile" 
+        target="_blank" 
+        rel="noopener"
+        class="text-decoration-none text-dark"
+      >
+        <i class="bi bi-twitter fs-4"></i>
+      </a>-->
+      <!-- Instagram -->
+      <a 
+        href="https://www.instagram.com/threesisterscandlecompany" 
+        target="_blank" 
+        rel="noopener"
+        class="text-decoration-none text-dark"
+      >
+        <i class="bi bi-instagram fs-4"></i>
+      </a>
+      <!-- YouTube 
+      <a 
+        href="https://www.youtube.com/yourchannel" 
+        target="_blank" 
+        rel="noopener"
+        class="text-decoration-none text-dark"
+      >
+        <i class="bi bi-youtube fs-4"></i>
+      </a>-->
+       </div>
+  </div>
+</section>
+<!-- End Social Media Section -->
+
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <footer class="py-3 bg-dark text-white text-center">
+    <div class="container">
+      <p class="m-0">
+        &copy; <span id="currentYear"></span> Three Sister's Candle Company. All rights reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Bootstrap 5 JavaScript (CDN) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
 </body>
 </html>
